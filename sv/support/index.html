@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PodRelay – Hjälp och support</title>
+<meta name="description" content="Installationshjälp, vanliga frågor och kontakt för PodRelay och den tillhörande Windows-appen.">
+<meta name="robots" content="index,follow">
+<link rel="alternate" hreflang="en" href="../../support/">
+<link rel="alternate" hreflang="sv" href="../../sv/support/">
+<link rel="stylesheet" href="../../style.css">
+<link rel="icon" href="../../icon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../"><img src="../../icon.svg" alt="" width="28" height="28"> PodRelay</a>
+  <nav aria-label="Huvudmeny">
+    <a href="../">Ladda ned</a>
+    <a href="../support/" aria-current="page">Support</a>
+    <a href="../privacy/">Integritet</a>
+    <a href="../../support/" hreflang="en" lang="en">English</a>
+  </nav>
+</header>
+<main>
+<section class="hero">
+  <h1>Hjälp och support</h1>
+  <p class="lede">PodRelay fungerar tillsammans med den tillhörande appen på din Windows-dator. De flesta frågor handlar om att installera den appen och få iPhone och datorn att hitta varandra.</p>
+</section>
+
+<h2>Kom igång</h2>
+<ol class="steps">
+  <li>Installera Windows-appen (PodRelay för Windows) på datorn. Den går inte att ladda ned ännu; <a href="../">nedladdningssidan</a> erbjuder den när den släpps.</li>
+  <li>Parkoppla hörlurarna med datorn i Windows Inställningar → Bluetooth och enheter, om du inte redan gjort det.</li>
+  <li>Slå på fjärrstyrning i Windows-appen och klicka på ”Parkoppla iPhone…”.</li>
+  <li>Tryck på <strong>Skanna QR-kod</strong> i PodRelay på iPhone.</li>
+</ol>
+
+<h2>Vanliga frågor</h2>
+<details><summary>Behöver jag Windows-appen?</summary>
+<p>Ja. PodRelay på iPhone skickar bara förfrågningar. Windows-appen på datorn gör själva anslutningen och frånkopplingen. Utan den kan PodRelay inte göra något.</p></details>
+<details><summary>Vilka hörlurar fungerar?</summary>
+<p>Bluetooth-hörlurar som redan är parkopplade med datorn. AirPods Pro och AirPods Max känns igen automatiskt på namnet. Andra hörlurar kan väljas som standardenhet i Windows-appen men är inte testade.</p></details>
+<details><summary>Fungerar det hemifrån?</summary>
+<p>Nej. iPhone och datorn måste vara i samma lokala nätverk. PodRelay använder ingen internettjänst och kan inte nå datorn utifrån.</p></details>
+<details><summary>Kan PodRelay flytta hörlurarna från iPhone till datorn?</summary>
+<p>PodRelay ber datorn att ansluta. Om hörlurarna lämnar iPhone avgör iOS och hörlurarna. Om de stannar på iPhone kan du välja datorn med hörlurarnas egna kontroller, eller koppla från dem på iPhone först. För att få tillbaka dem till iPhone väljer du dem i Kontrollcenter.</p></details>
+<details><summary>Kan PodRelay ändra brusreglering?</summary>
+<p>Nej. iOS har inget publikt sätt för appar att göra det. Använd åtgärden ”Ställ in brusregleringsläge” i Apples app Genvägar. Den går via iPhone och kan därför inte ändra läget medan hörlurarna är anslutna till datorn.</p></details>
+<details><summary>Fungerar widgetarna och kontrollerna på en låst iPhone?</summary>
+<p>Inte alltid. Inget fungerar förrän iPhone har låsts upp en gång sedan omstart, och iOS kan be dig låsa upp innan en åtgärd körs. iOS håller knappar i widgetar inaktiva tills du låser upp. Widgetarna visar senaste status som datorn bekräftat, med klockslag, och kontaktar aldrig datorn av sig själva.</p></details>
+<details><summary>Är det säkert att öppna en nätverksport på datorn?</summary>
+<p>Fjärrstyrningen är avstängd tills du slår på den. Brandväggsregeln tillåter bara Windows-appen, en TCP-port (47833), privata nätverk och ditt lokala subnät, och spärrar porten på offentliga nätverk. Varje parkopplad iPhone får en egen nyckel som du kan ta bort när som helst i Windows-appen. Meddelandena är krypterade och kan inte spelas upp igen.</p></details>
+
+<h2>Felsökning</h2>
+<table>
+  <tr><th>Det här ser du</th><th>Gör så här</th></tr>
+  <tr><td>”Datorn går inte att nå”</td><td>Väck datorn. Kontrollera att Windows-appen körs (ikonen vid klockan) och att båda enheterna är i samma nätverk. Ställ in nätverket som <em>Privat</em> i Windows. Gästnätverk och vissa mesh-system hindrar enheter från att nå varandra.</td></tr>
+  <tr><td>”svarar inte – är PodRelay för Windows igång …”</td><td>Starta Windows-appen och slå på fjärrstyrning. Kontrollera att brandväggsregeln skapades (fönstret visar ”Lyssnar på port 47833”).</td></tr>
+  <tr><td>Åtkomst till lokalt nätverk</td><td>iPhone Inställningar → Integritet och säkerhet → Lokalt nätverk → slå på PodRelay.</td></tr>
+  <tr><td>”Telefonen är borttagen i Windows-appen”</td><td>Parkoppla igen med en ny QR-kod.</td></tr>
+  <tr><td>QR-koden har gått ut</td><td>Koderna gäller i 2 minuter. Klicka på ”Parkoppla iPhone…” igen.</td></tr>
+  <tr><td>”Inte bekräftat” på låsskärmen</td><td>Datorn svarade inte i tid, ofta för att iPhone var låst eller datorn sov. Öppna PodRelay för att se aktuell status.</td></tr>
+  <tr><td>Hörlurarna ansluter inte</td><td>Öppna fodralet eller ta ut dem, och håll dem nära datorn. Kontrollera att Bluetooth är på och att rätt hörlurar är valda i Windows-appens inställningar.</td></tr>
+</table>
+
+<h2>Kontakt</h2>
+<div class="card">
+<p>E-post: <a href="mailto:info@astrit.se">info@astrit.se</a></p>
+<p>Ta gärna med: PodRelays version (Inställningar → Om), Windows-appens version (Windows Inställningar → Appar), din Windows-version, hörlursmodell och vad du ser.</p>
+<p class="small">Om du skickar utdata från <code>AirPodsToggle.exe --diag</code>: den innehåller hörlurarnas Bluetooth-adresser och enhetsnamn. Du kan ta bort dem innan du skickar. Vi använder bara det du skickar för att svara dig.</p>
+</div>
+
+</main>
+<footer>
+  <p>Support: <a href="mailto:info@astrit.se">info@astrit.se</a></p>
+  <p>PodRelay är inte gjord av eller knuten till Apple. AirPods, iPhone och App Store är varumärken som tillhör Apple Inc. Windows är ett varumärke som tillhör Microsoft Corporation.</p>
+  <p class="small">Webbplatsen använder inga cookies och ingen analys.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PodRelay for Windows – Download</title>
+<meta name="description" content="PodRelay for Windows, the companion app that PodRelay on iPhone needs to connect and disconnect your headphones on your PC.">
+<meta name="robots" content="index,follow">
+<link rel="alternate" hreflang="en" href="./">
+<link rel="alternate" hreflang="sv" href="./sv/">
+<link rel="stylesheet" href="./style.css">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./"><img src="./icon.svg" alt="" width="28" height="28"> PodRelay</a>
+  <nav aria-label="Main">
+    <a href="./" aria-current="page">Download</a>
+    <a href="./support/">Support</a>
+    <a href="./privacy/">Privacy</a>
+    <a href="./sv/" hreflang="sv" lang="sv">Svenska</a>
+  </nav>
+</header>
+<main>
+<section class="hero">
+  <h1>PodRelay for Windows</h1>
+  <p class="lede">PodRelay on iPhone needs a companion app on your Windows PC. You tap on your iPhone, and the companion app connects or disconnects your headphones on the PC over Bluetooth.</p>
+  <div class="download">
+    <p class="soon">Windows download coming soon</p>
+    <span>PodRelay for iPhone is coming to the App Store.</span>
+  </div>
+  <p class="meta">The Windows app is not available for download yet. This page will offer it when it is released. Requirements: Windows 10 version 2004 or later, or Windows 11 · 64-bit (x64)</p>
+</section>
+
+<h2>How it works</h2>
+<ol class="flow">
+  <li><strong>1 · PodRelay on iPhone</strong><span>Tap a button in the app, a Lock Screen widget or a control.</span></li>
+  <li><strong>2 · Your local network</strong><span>The request goes straight to your own PC on the same network, encrypted with a key created when you pair. No cloud service.</span></li>
+  <li><strong>3 · PodRelay for Windows on the PC</strong><span>Connects or disconnects the headphones that are already paired with the PC, and reports the result.</span></li>
+</ol>
+<p>PodRelay only changes the PC's connection. It can't make your iPhone release or take over the headphones. If they are in use by another device, iOS and the headphones decide what happens.</p>
+
+<h2>System requirements</h2>
+<div class="card">
+<table>
+  <tr><th scope="row">PC</th><td>Windows 10 version 2004 (build 19041) or later, or Windows 11. 64-bit (x64). Bluetooth with Windows' built-in Bluetooth audio support. No .NET installation needed.</td></tr>
+  <tr><th scope="row">iPhone</th><td>PodRelay 1.0.0 for iOS 18 or later.</td></tr>
+  <tr><th scope="row">Network</th><td>iPhone and PC on the same local network. The network must be set to <em>Private</em> in Windows.</td></tr>
+  <tr><th scope="row">Headphones</th><td>Bluetooth headphones that are already paired with the PC. AirPods Pro and AirPods Max are recognized automatically.</td></tr>
+</table>
+<h3>Tested devices</h3>
+<p>Testing of this release is still in progress. Tested Windows versions, iPhone models and headphones will be listed here.</p>
+<p class="small">Other Windows versions, PCs and headphones may work but have not been tested. Windows on Arm is not supported.</p>
+</div>
+
+<h2>Pair with your iPhone</h2>
+<ol class="steps">
+  <li>In the Windows app's settings, next to <strong>Remote control from iPhone</strong>, click <strong>Open…</strong>.</li>
+  <li>Turn on <strong>Allow remote control on the local network</strong>.</li>
+  <li>Click <strong>Allow in firewall…</strong> and approve once. The rule only allows this app, TCP port 47833, private networks and your local subnet.</li>
+  <li>Click <strong>Pair iPhone…</strong>. A QR code appears. It is valid for 2 minutes and can be used once.</li>
+  <li>Open PodRelay on your iPhone, tap <strong>Scan QR Code</strong> and allow local network access when iOS asks.</li>
+</ol>
+<p>Already have the Windows app? Open PodRelay and go straight to pairing.</p>
+
+<h2>Troubleshooting</h2>
+<details><summary>PodRelay says it can't reach the PC</summary>
+<p>Check that the PC is awake, that PodRelay for Windows is running (icon next to the clock), that remote control is on, and that the iPhone is on the same network. In Windows, the network must be <em>Private</em>. Guest networks often block devices from reaching each other.</p></details>
+<details><summary>The headphones don't connect</summary>
+<p>Open the case or take the headphones out, and keep them near the PC. If they are playing audio from another device, they may not switch. Choose them in iPhone's Control Center if you want them back on iPhone.</p></details>
+<p><a href="./support/">More help and contact</a> · <a href="./privacy/">Privacy policy</a></p>
+
+</main>
+<footer>
+  <p>Support: <a href="mailto:info@astrit.se">info@astrit.se</a></p>
+  <p>PodRelay is not made by or affiliated with Apple. AirPods, iPhone and App Store are trademarks of Apple Inc. Windows is a trademark of Microsoft Corporation.</p>
+  <p class="small">This website uses no cookies and no analytics.</p>
+</footer>
+</body>
+</html>

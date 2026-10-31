@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PodRelay – Help &amp; Support</title>
+<meta name="description" content="Installation help, frequently asked questions and contact for PodRelay and its Windows companion app.">
+<meta name="robots" content="index,follow">
+<link rel="alternate" hreflang="en" href="../support/">
+<link rel="alternate" hreflang="sv" href="../sv/support/">
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../icon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../"><img src="../icon.svg" alt="" width="28" height="28"> PodRelay</a>
+  <nav aria-label="Main">
+    <a href="../">Download</a>
+    <a href="../support/" aria-current="page">Support</a>
+    <a href="../privacy/">Privacy</a>
+    <a href="../sv/support/" hreflang="sv" lang="sv">Svenska</a>
+  </nav>
+</header>
+<main>
+<section class="hero">
+  <h1>Help &amp; Support</h1>
+  <p class="lede">PodRelay works together with its companion app on your Windows PC. Most questions are about installing that app and getting the iPhone and PC to find each other.</p>
+</section>
+
+<h2>Get started</h2>
+<ol class="steps">
+  <li>Install the Windows app (PodRelay for Windows) on your PC. It is not available for download yet; <a href="../">the download page</a> will offer it when it is released.</li>
+  <li>Pair your headphones with the PC in Windows Settings → Bluetooth &amp; devices, if you haven't already.</li>
+  <li>In the Windows app, open <strong>Remote control from iPhone</strong>, turn it on and click <strong>Pair iPhone…</strong>.</li>
+  <li>In PodRelay on iPhone, tap <strong>Scan QR Code</strong>.</li>
+</ol>
+
+<h2>Frequently asked questions</h2>
+<details><summary>Do I need the Windows app?</summary>
+<p>Yes. PodRelay on iPhone only sends requests. The Windows app on your PC does the actual connecting and disconnecting. Without it, PodRelay can't do anything.</p></details>
+<details><summary>Which headphones work?</summary>
+<p>Bluetooth headphones that are already paired with your PC. AirPods Pro and AirPods Max are recognized automatically by name. Other headphones can be chosen as the default device in the Windows app but have not been tested.</p></details>
+<details><summary>Does it work away from home?</summary>
+<p>No. The iPhone and PC must be on the same local network. PodRelay doesn't use any internet service and can't reach your PC from outside.</p></details>
+<details><summary>Can PodRelay move the headphones from my iPhone to the PC?</summary>
+<p>PodRelay asks the PC to connect. Whether the headphones leave the iPhone is decided by iOS and the headphones. If they stay on iPhone, choose the PC from the headphones' own controls, or disconnect them on iPhone first. To bring them back to iPhone, choose them in Control Center.</p></details>
+<details><summary>Can PodRelay change noise control?</summary>
+<p>No. iOS has no public way for apps to do this. Use the action “Set Noise Control Mode” in Apple's Shortcuts app. It works through iPhone, so it can't change the mode while the headphones are connected to the PC.</p></details>
+<details><summary>Do the widgets and controls work on a locked iPhone?</summary>
+<p>Not always. Nothing works until the iPhone has been unlocked once since restarting, and iOS may ask you to unlock before it runs an action. iOS keeps buttons inside widgets inactive until you unlock. Widgets show the last status your PC confirmed, with the time, and don't contact the PC on their own.</p></details>
+<details><summary>Is it safe to open a network port on my PC?</summary>
+<p>Remote control is off until you turn it on. The firewall rule only allows the Windows app, one TCP port (47833), private networks and your local subnet, and is blocked on public networks. Each paired iPhone gets its own key, which you can remove at any time in the Windows app. Messages are encrypted and can't be replayed.</p></details>
+
+<h2>Troubleshooting</h2>
+<table>
+  <tr><th>What you see</th><th>What to do</th></tr>
+  <tr><td>“Can't reach the PC”</td><td>Wake the PC. Check that the Windows app is running (icon next to the clock) and that both devices are on the same network. In Windows, set the network to <em>Private</em>. Guest networks and some mesh systems block devices from reaching each other.</td></tr>
+  <tr><td>“isn't answering – is PodRelay for Windows running…”</td><td>Start the Windows app and turn on remote control. Check that the firewall rule was created (the window shows “Listening on port 47833”).</td></tr>
+  <tr><td>Local network permission</td><td>iPhone Settings → Privacy &amp; Security → Local Network → turn on PodRelay.</td></tr>
+  <tr><td>“This iPhone was removed in the Windows app”</td><td>Pair again with a new QR code.</td></tr>
+  <tr><td>The QR code has expired</td><td>Codes are valid for 2 minutes. Click <strong>Pair iPhone…</strong> again.</td></tr>
+  <tr><td>“Not confirmed” on the Lock Screen</td><td>The PC didn't answer in time, often because the iPhone was locked or the PC asleep. Open PodRelay to see the current status.</td></tr>
+  <tr><td>The headphones don't connect</td><td>Open the case or take them out, and keep them near the PC. Check that Bluetooth is on and that the right headphones are chosen in the Windows app's settings.</td></tr>
+</table>
+
+<h2>Contact</h2>
+<div class="card">
+<p>Email: <a href="mailto:info@astrit.se">info@astrit.se</a></p>
+<p>Please include: the PodRelay version (Settings → About), the Windows app version (Windows Settings → Apps), your Windows version, your headphone model and what you see.</p>
+<p class="small">If you send the output of <code>AirPodsToggle.exe --diag</code>, note that it contains your headphones' Bluetooth addresses and device names. You can remove them before sending. We only use what you send to answer you.</p>
+</div>
+
+</main>
+<footer>
+  <p>Support: <a href="mailto:info@astrit.se">info@astrit.se</a></p>
+  <p>PodRelay is not made by or affiliated with Apple. AirPods, iPhone and App Store are trademarks of Apple Inc. Windows is a trademark of Microsoft Corporation.</p>
+  <p class="small">This website uses no cookies and no analytics.</p>
+</footer>
+</body>
+</html>

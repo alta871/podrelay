@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PodRelay för Windows – Ladda ned</title>
+<meta name="description" content="PodRelay för Windows, appen som PodRelay på iPhone behöver för att ansluta och koppla från dina hörlurar på datorn.">
+<meta name="robots" content="index,follow">
+<link rel="alternate" hreflang="en" href="../">
+<link rel="alternate" hreflang="sv" href="../sv/">
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../icon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./"><img src="../icon.svg" alt="" width="28" height="28"> PodRelay</a>
+  <nav aria-label="Huvudmeny">
+    <a href="./" aria-current="page">Ladda ned</a>
+    <a href="./support/">Support</a>
+    <a href="./privacy/">Integritet</a>
+    <a href="../" hreflang="en" lang="en">English</a>
+  </nav>
+</header>
+<main>
+<section class="hero">
+  <h1>PodRelay för Windows</h1>
+  <p class="lede">PodRelay på iPhone behöver en tillhörande app på din Windows-dator. Du trycker på iPhone, och appen på datorn ansluter eller kopplar från dina hörlurar via Bluetooth.</p>
+  <div class="download">
+    <p class="soon">Nedladdning för Windows kommer snart</p>
+    <span>PodRelay för iPhone kommer till App Store.</span>
+  </div>
+  <p class="meta">Windows-appen går inte att ladda ned ännu. Den här sidan erbjuder den när den släpps. Krav: Windows 10 version 2004 eller senare, eller Windows 11 · 64-bitars (x64)</p>
+</section>
+
+<h2>Så fungerar det</h2>
+<ol class="flow">
+  <li><strong>1 · PodRelay på iPhone</strong><span>Tryck på en knapp i appen, en widget på låsskärmen eller en kontroll.</span></li>
+  <li><strong>2 · Ditt lokala nätverk</strong><span>Förfrågan går direkt till din egen dator i samma nätverk, krypterad med en nyckel som skapas när du parkopplar. Ingen molntjänst.</span></li>
+  <li><strong>3 · PodRelay för Windows på datorn</strong><span>Ansluter eller kopplar från hörlurarna som redan är parkopplade med datorn, och rapporterar resultatet.</span></li>
+</ol>
+<p>PodRelay ändrar bara datorns anslutning. Appen kan inte tvinga iPhone att släppa eller ta över hörlurarna. Om de används av en annan enhet avgör iOS och hörlurarna vad som händer.</p>
+
+<h2>Systemkrav</h2>
+<div class="card">
+<table>
+  <tr><th scope="row">Dator</th><td>Windows 10 version 2004 (build 19041) eller senare, eller Windows 11. 64-bitars (x64). Bluetooth med Windows inbyggda stöd för Bluetooth-ljud. Ingen .NET-installation behövs.</td></tr>
+  <tr><th scope="row">iPhone</th><td>PodRelay 1.0.0 för iOS 18 eller senare.</td></tr>
+  <tr><th scope="row">Nätverk</th><td>iPhone och datorn i samma lokala nätverk. Nätverket ska vara inställt som <em>Privat</em> i Windows.</td></tr>
+  <tr><th scope="row">Hörlurar</th><td>Bluetooth-hörlurar som redan är parkopplade med datorn. AirPods Pro och AirPods Max känns igen automatiskt.</td></tr>
+</table>
+<h3>Testade enheter</h3>
+<p>Testerna av den här versionen pågår. Testade Windows-versioner, iPhone-modeller och hörlurar listas här.</p>
+<p class="small">Andra Windows-versioner, datorer och hörlurar kan fungera men är inte testade. Windows på Arm stöds inte.</p>
+</div>
+
+<h2>Parkoppla med iPhone</h2>
+<ol class="steps">
+  <li>Klicka på <strong>Öppna…</strong> vid <strong>Fjärrkontroll från iPhone</strong> i Windows-appens inställningar.</li>
+  <li>Slå på <strong>Tillåt fjärrstyrning på lokalt nätverk</strong>.</li>
+  <li>Klicka på <strong>Tillåt i brandväggen…</strong> och godkänn en gång. Regeln tillåter bara den här appen, TCP-port 47833, privata nätverk och ditt lokala subnät.</li>
+  <li>Klicka på <strong>Parkoppla iPhone…</strong>. En QR-kod visas. Den gäller i 2 minuter och kan bara användas en gång.</li>
+  <li>Öppna PodRelay på iPhone, tryck på <strong>Skanna QR-kod</strong> och tillåt åtkomst till lokalt nätverk när iOS frågar.</li>
+</ol>
+<p>Har du redan Windows-appen? Öppna PodRelay och gå direkt till parkopplingen.</p>
+
+<h2>Felsökning</h2>
+<details><summary>PodRelay säger att datorn inte går att nå</summary>
+<p>Kontrollera att datorn är vaken, att PodRelay för Windows körs (ikonen vid klockan), att fjärrstyrning är påslagen och att iPhone är i samma nätverk. Nätverket ska vara <em>Privat</em> i Windows. Gästnätverk hindrar ofta enheter från att nå varandra.</p></details>
+<details><summary>Hörlurarna ansluter inte</summary>
+<p>Öppna fodralet eller ta ut hörlurarna, och håll dem nära datorn. Om de spelar ljud från en annan enhet byter de kanske inte. Välj dem i iPhones Kontrollcenter om du vill ha tillbaka dem på iPhone.</p></details>
+<p><a href="./support/">Mer hjälp och kontakt</a> · <a href="./privacy/">Integritetspolicy</a></p>
+
+</main>
+<footer>
+  <p>Support: <a href="mailto:info@astrit.se">info@astrit.se</a></p>
+  <p>PodRelay är inte gjord av eller knuten till Apple. AirPods, iPhone och App Store är varumärken som tillhör Apple Inc. Windows är ett varumärke som tillhör Microsoft Corporation.</p>
+  <p class="small">Webbplatsen använder inga cookies och ingen analys.</p>
+</footer>
+</body>
+</html>

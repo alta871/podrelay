@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PodRelay – Integritetspolicy</title>
+<meta name="description" content="Så hanterar PodRelay för iPhone, den tillhörande Windows-appen och den här webbplatsen uppgifter.">
+<meta name="robots" content="index,follow">
+<link rel="alternate" hreflang="en" href="../../privacy/">
+<link rel="alternate" hreflang="sv" href="../../sv/privacy/">
+<link rel="stylesheet" href="../../style.css">
+<link rel="icon" href="../../icon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../"><img src="../../icon.svg" alt="" width="28" height="28"> PodRelay</a>
+  <nav aria-label="Huvudmeny">
+    <a href="../">Ladda ned</a>
+    <a href="../support/">Support</a>
+    <a href="../privacy/" aria-current="page">Integritet</a>
+    <a href="../../privacy/" hreflang="en" lang="en">English</a>
+  </nav>
+</header>
+<main>
+<section class="hero">
+  <h1>Integritetspolicy</h1>
+  <p class="lede">PodRelay skickar inga uppgifter till oss eller till tredje part. iPhone-appen kommunicerar bara med din egen dator i ditt lokala nätverk, och allt den behöver sparas på dina egna enheter.</p>
+  <p class="meta">Gäller från 31 oktober 2026 · Gäller PodRelay för iPhone 1.0.0, PodRelay för Windows 1.1.0 och den här webbplatsen.</p>
+</section>
+
+<h2>Vem som ansvarar</h2>
+<p>Astrit Morina, Göteborg, Sweden. E-post: <a href="mailto:info@astrit.se">info@astrit.se</a>.</p>
+
+<h2>Sammanfattning</h2>
+<ul class="plain">
+  <li>Inget konto, ingen reklam, ingen analys, ingen spårning och inga tjänster för kraschrapporter i apparna.</li>
+  <li>Apparna skickar inget till oss eller till någon server på internet.</li>
+  <li>iPhone-appen och Windows-appen kommunicerar bara med varandra, i ditt lokala nätverk, efter att du parkopplat dem.</li>
+  <li>Du kan ta bort allt: ”Glöm datorn” och att ta bort appen på iPhone, och avinstallation i Windows.</li>
+</ul>
+
+<h2>PodRelay för iPhone</h2>
+<h3>Sparas på din iPhone</h3>
+<table>
+  <tr><th>Vad</th><th>Varför</th><th>Var och hur länge</th></tr>
+  <tr><td>Parkopplingsnyckel, datorns ID, namn, lokala IP-adress och port, och ett ID för din iPhone</td><td>För att nå datorn och visa att förfrågningar kommer från din parkopplade iPhone</td><td>iOS nyckelring, bara på den här iPhone (inte i säkerhetskopior). Tills du väljer Glöm datorn eller tar bort appen.</td></tr>
+  <tr><td>Senaste status som datorn bekräftat, med klockslag</td><td>Visas i appen och i widgetarna</td><td>Delad applagring på iPhone. Tills Glöm datorn eller appen tas bort.</td></tr>
+  <tr><td>Uppgifter om senaste tryck på låsskärmen: tid, källa, steg och datorns lokala IP-adress</td><td>Visas i Inställningar som hjälp vid felsökning</td><td>Delad applagring på iPhone. Ersätts vid varje tryck. Tills Glöm datorn eller appen tas bort.</td></tr>
+  <tr><td>Ditt språkval</td><td>För att visa appen på det språk du valt</td><td>Delad applagring på iPhone. Tills appen tas bort.</td></tr>
+</table>
+<h3>Skickas till din dator</h3>
+<p>Vid parkoppling: ett ID för iPhone och det enhetsnamn som iOS ger appar (normalt bara ”iPhone”). Vid varje förfrågan: kommandot (till exempel ”anslut” eller ”koppla från”), varifrån det kom (app, widget, kontroll eller genväg) och säkerhetsdata som slumptal och en meddelanderäknare. Förfrågningarna krypteras med nyckeln som skapades vid parkopplingen. Inget lämnar ditt lokala nätverk.</p>
+<h3>Behörigheter</h3>
+<ul class="plain">
+  <li><strong>Kamera</strong>: bara för att skanna QR-koden som Windows-appen visar vid parkoppling. Bilderna behandlas på iPhone och sparas eller skickas aldrig.</li>
+  <li><strong>Lokalt nätverk</strong>: för att nå datorn.</li>
+</ul>
+
+<h2>PodRelay för Windows</h2>
+<p>Sparas bara på din dator, i <code>%APPDATA%\AirPodsToggle</code> för ditt Windows-konto:</p>
+<table>
+  <tr><th>Vad</th><th>Varför</th></tr>
+  <tr><td>Valda hörlurar: namn, Bluetooth-adress och Windows enhets-ID; läge och tidsgränser</td><td>För att ansluta och koppla från rätt hörlurar</td></tr>
+  <tr><td>Parkopplade iPhone-enheter: ID, namn, parkopplingsnyckel (krypterad med Windows DPAPI så att bara ditt Windows-konto kan läsa den), när den parkopplades och senast sågs</td><td>För att bara godta förfrågningar från iPhone-enheter du parkopplat</td></tr>
+  <tr><td>En logg: tid, åtgärd, resultat, anslutningstid och de första tecknen i telefonens ID. Högst 256 kB, sedan börjar den om.</td><td>För att visa vad som hänt och underlätta felsökning</td></tr>
+  <tr><td><code>diag.txt</code>, bara om du kör <code>--diag</code>: ljudenheter, Bluetooth-adresser och parkopplade Bluetooth-ljudenheter</td><td>Felsökning</td></tr>
+</table>
+<p>Windows-appen kontaktar inte internet och uppdateras inte automatiskt. Med fjärrstyrning påslagen tar den bara emot anslutningar från ditt lokala nätverk. För att ta bort uppgifterna avinstallerar du appen och väljer att ta bort inställningarna, eller tar bort en enskild iPhone i appens fönster för fjärrkontroll.</p>
+
+<h2>Den här webbplatsen</h2>
+<p>Webbplatsen använder inga cookies, ingen analys och inga resurser från tredje part. Den driftas av GitHub Pages (GitHub, Inc.), som liksom alla webbvärdar behandlar din IP-adress och webbläsarinformation för att leverera sidorna och skydda tjänsten. Se <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Pages (GitHub, Inc.)s integritetspolicy</a>.</p>
+
+<h2>App Store och Apple</h2>
+<p>Apple hanterar din nedladdning och ditt köp i App Store enligt Apples integritetspolicy. Om du i iOS valt att dela analysdata med apputvecklare kan Apple ge oss sammanställd, anonym statistik om användning och krascher. Vi får inget som identifierar dig.</p>
+
+<h2>E-post till support</h2>
+<p>Om du mejlar oss använder vi din e-postadress och det du skriver bara för att svara dig. Vi sparar konversationen så länge det behövs för det, och inte längre än 12 månader. Vi delar den inte med någon.</p>
+
+<h2>Dina rättigheter</h2>
+<p>Vi har inga personuppgifter om dig, utöver e-post du själv skickar oss. Du kan fråga vad vi har, få det rättat eller raderat och invända mot vår hantering genom att mejla <a href="mailto:info@astrit.se">info@astrit.se</a>. Du kan också klaga hos Integritetsskyddsmyndigheten (IMY), <a href="https://www.imy.se">imy.se</a>.</p>
+
+<h2>Barn</h2>
+<p>PodRelay samlar inte in uppgifter från någon, inklusive barn.</p>
+
+<h2>Ändringar</h2>
+<p>Om apparna börjar hantera uppgifter på ett annat sätt uppdaterar vi policyn innan den versionen släpps och ändrar datumet överst.</p>
+
+</main>
+<footer>
+  <p>Support: <a href="mailto:info@astrit.se">info@astrit.se</a></p>
+  <p>PodRelay är inte gjord av eller knuten till Apple. AirPods, iPhone och App Store är varumärken som tillhör Apple Inc. Windows är ett varumärke som tillhör Microsoft Corporation.</p>
+  <p class="small">Webbplatsen använder inga cookies och ingen analys.</p>
+</footer>
+</body>
+</html>

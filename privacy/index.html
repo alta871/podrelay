@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PodRelay – Privacy Policy</title>
+<meta name="description" content="How PodRelay for iPhone, its Windows companion app and this website handle data.">
+<meta name="robots" content="index,follow">
+<link rel="alternate" hreflang="en" href="../privacy/">
+<link rel="alternate" hreflang="sv" href="../sv/privacy/">
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../icon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../"><img src="../icon.svg" alt="" width="28" height="28"> PodRelay</a>
+  <nav aria-label="Main">
+    <a href="../">Download</a>
+    <a href="../support/">Support</a>
+    <a href="../privacy/" aria-current="page">Privacy</a>
+    <a href="../sv/privacy/" hreflang="sv" lang="sv">Svenska</a>
+  </nav>
+</header>
+<main>
+<section class="hero">
+  <h1>Privacy Policy</h1>
+  <p class="lede">PodRelay sends no data to us or to third parties. The iPhone app only talks to your own PC on your local network, and everything it needs is stored on your own devices.</p>
+  <p class="meta">Effective 31 October 2026 · Applies to PodRelay for iPhone 1.0.0, PodRelay for Windows 1.1.0 and this website.</p>
+</section>
+
+<h2>Who is responsible</h2>
+<p>Astrit Morina, Göteborg, Sweden. Email: <a href="mailto:info@astrit.se">info@astrit.se</a>.</p>
+
+<h2>Summary</h2>
+<ul class="plain">
+  <li>No account, no advertising, no analytics, no tracking and no crash-reporting services in the apps.</li>
+  <li>The apps don't send anything to us or to any server on the internet.</li>
+  <li>The iPhone app and the Windows app only communicate with each other, on your local network, after you pair them.</li>
+  <li>You can delete everything: “Forget PC” and deleting the app on iPhone, and uninstalling on Windows.</li>
+</ul>
+
+<h2>PodRelay for iPhone</h2>
+<h3>Stored on your iPhone</h3>
+<table>
+  <tr><th>What</th><th>Why</th><th>Where and how long</th></tr>
+  <tr><td>Pairing key, your PC's ID, name, local IP address and port, and an ID for your iPhone</td><td>To reach your PC and prove that requests come from your paired iPhone</td><td>iOS Keychain, on this iPhone only (not in backups). Until you choose Forget PC or delete the app.</td></tr>
+  <tr><td>The last status your PC confirmed, with time</td><td>Shown in the app and in widgets</td><td>Shared app storage on the iPhone. Until Forget PC or the app is deleted.</td></tr>
+  <tr><td>A record of the last Lock Screen press: time, source, steps and your PC's local IP address</td><td>Shown in Settings to help you troubleshoot</td><td>Shared app storage on the iPhone. Replaced at each press. Until Forget PC or the app is deleted.</td></tr>
+  <tr><td>Your language choice</td><td>To show the app in the language you chose</td><td>Shared app storage on the iPhone. Until the app is deleted.</td></tr>
+</table>
+<h3>Sent to your PC</h3>
+<p>When you pair: an ID for the iPhone and the device name iOS gives apps (normally just “iPhone”). For each request: the command (for example “connect” or “disconnect”), where it came from (app, widget, control or shortcut) and security data such as random numbers and a message counter. Requests are encrypted with the key created when you paired. Nothing leaves your local network.</p>
+<h3>Permissions</h3>
+<ul class="plain">
+  <li><strong>Camera</strong>: only to scan the QR code shown by the Windows app when pairing. Images are processed on the iPhone and never stored or sent.</li>
+  <li><strong>Local network</strong>: to reach your PC.</li>
+</ul>
+
+<h2>PodRelay for Windows</h2>
+<p>Stored only on your PC, in <code>%APPDATA%\AirPodsToggle</code> for your Windows user account:</p>
+<table>
+  <tr><th>What</th><th>Why</th></tr>
+  <tr><td>Your chosen headphones: name, Bluetooth address and Windows device ID; mode and time limits</td><td>To connect and disconnect the right headphones</td></tr>
+  <tr><td>Paired iPhones: ID, name, pairing key (encrypted with Windows DPAPI so that only your Windows account can read it), when paired and last seen</td><td>To accept requests only from iPhones you paired</td></tr>
+  <tr><td>A log: time, action, result, connection time and the first characters of the iPhone's ID. Limited to 256 KB, then started over.</td><td>To show what happened and help with troubleshooting</td></tr>
+  <tr><td><code>diag.txt</code>, only if you run <code>--diag</code>: audio devices, Bluetooth addresses and paired Bluetooth audio devices</td><td>Troubleshooting</td></tr>
+</table>
+<p>The Windows app doesn't contact the internet and has no automatic updates. With remote control turned on, it only accepts connections from your local network. To delete the data, uninstall the app and choose to delete settings, or remove a single iPhone in the app's remote control window.</p>
+
+<h2>This website</h2>
+<p>This website uses no cookies, analytics or third-party resources. It is hosted by GitHub Pages (GitHub, Inc.), which, like any web host, processes your IP address and browser information to deliver the pages and protect the service. See <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Pages (GitHub, Inc.)'s privacy statement</a>.</p>
+
+<h2>App Store and Apple</h2>
+<p>Apple handles your App Store download and purchase under Apple's privacy policy. If you have chosen in iOS to share analytics with app developers, Apple may give us aggregated, anonymous usage and crash statistics. We receive nothing that identifies you.</p>
+
+<h2>Email to support</h2>
+<p>If you email us, we use your email address and what you write only to answer you. We keep the conversation as long as needed for that, and no longer than 12 months. We don't share it with anyone.</p>
+
+<h2>Your rights</h2>
+<p>We don't hold personal data about you, other than any email you send us. You can ask us what we have, have it corrected or deleted, and object to our handling, by emailing <a href="mailto:info@astrit.se">info@astrit.se</a>. You can also complain to your data protection authority. In Sweden that is the Swedish Authority for Privacy Protection (IMY), <a href="https://www.imy.se">imy.se</a>.</p>
+
+<h2>Children</h2>
+<p>PodRelay collects no data from anyone, including children.</p>
+
+<h2>Changes</h2>
+<p>If the apps start handling data differently, we will update this policy before that version is released and change the date at the top.</p>
+
+</main>
+<footer>
+  <p>Support: <a href="mailto:info@astrit.se">info@astrit.se</a></p>
+  <p>PodRelay is not made by or affiliated with Apple. AirPods, iPhone and App Store are trademarks of Apple Inc. Windows is a trademark of Microsoft Corporation.</p>
+  <p class="small">This website uses no cookies and no analytics.</p>
+</footer>
+</body>
+</html>
